@@ -85,14 +85,96 @@ TODO
             SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYY
 
 + Response 200 (application/json)
-    + id [String]
+    + id [String]  
         The unique ID of Next Trucking order.
-
+    + pickupAddressName [String]  
+        TODO
+    + pickupAddress [String]  
+        TODO
+    + pickupAddressLine [String]  
+        TODO
+    + pickupAddressLine2 [String]  
+        TODO
+    + pickupAddressCity [String]  
+        TODO
+    + pickupAddressState [String]  
+        TODO
+    + pickupAddressCountry [String]  
+        TODO
+    + pickupAddressZipcode [String]  
+        TODO
+    + deliveryAddressName [String]  
+        TODO
+    + deliveryAddress [String]  
+        TODO
+    + deliveryAddressLine [String]  
+        TODO
+    + deliveryAddressLine2 [String]  
+        TODO
+    + deliveryAddressCity [String]  
+        TODO
+    + deliveryAddressState [String]  
+        TODO
+    + deliveryAddressCountry [String]  
+        TODO
+    + deliveryAddressZipcode [String]  
+        TODO  
+    + pickupWindowStart [Long][UTC]  
+        TODO  
+    + pickupWindowEnd [Long][UTC]  
+        TODO  
+    + deliveryWindowStart [Long][UTC]  
+        TODO  
+    + deliveryWindowEnd [Long][UTC]  
+        TODO  
+    + referenceNumbers [Array][String]  
+        TODO  
+    + purchaseOrderNumber [String]  
+        TODO  
+    + sealNumber [String]  
+        TODO  
+    + trailerType [String]  
+        TODO  
+    + value [Double]  
+        TODO  
+    + weight [Integer]  
+        TODO  
+    + commodity [String]  
+        TODO  
+    + shipperNotes [String]  
+        TODO  
+    
              {
-                 "id": "T0000001",
-                 "canceled": true,
-                 "lastModifiedDate": 1498050097
-             }
+                "id": "",
+                "pickupAddressName": "",
+                "pickupAddress": "",
+                "pickupAddressLine": "",
+                "pickupAddressLine2": "",
+                "pickupAddressCity": "",
+                "pickupAddressState": "",
+                "pickupAddressCountry": "",
+                "pickupAddressZipcode": "",
+                "deliveryAddressName": "",
+                "deliveryAddress": "",
+                "deliveryAddressLine": "",
+                "deliveryAddressLine2": "",
+                "deliveryAddressCity": "",
+                "deliveryAddressState": "",
+                "deliveryAddressCountry": "",
+                "deliveryAddressZipcode": "",
+                "pickupWindowStart": "",
+                "pickupWindowEnd": "",
+                "deliveryWindowStart": "",
+                "deliveryWindowEnd": "",
+                "referenceNumbers": "",
+                "purchaseOrderNumber": "",
+                "sealNumber": "",
+                "trailerType": "",
+                "value": "",
+                "weight": "",
+                "commodity": "",
+                "shipperNotes": ""
+            }
         
 + Response 401
 
