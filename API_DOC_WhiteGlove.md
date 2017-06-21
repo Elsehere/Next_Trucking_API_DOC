@@ -6,7 +6,7 @@ Please noted that the prefix for all API is /whiteglove
 
 ## Lastest Orders [/latestorders]
 
-### List All Order Snapshots for Latest 24 Hours [/latestorders?hour=24][GET]
+### List All Order Snapshots for the Last 24 Hours [/latestorders?timeframe=24][GET]
 
 TODO
 
@@ -14,9 +14,9 @@ TODO
 
     + Parameters
     
-      + hour  
-        Hour means the period for latest orders.  
-        Now this API only supports 24/48/96 for hour.
+      + timeframe  
+        Timeframe means the period for the latest orders.  
+        Now this API only supports the last 24/48/96 hours for timeframe.
 
     + Headers
 
@@ -143,6 +143,16 @@ TODO
         TODO  
     + shipperNotes [String]  
         TODO  
+    + nmfcClass [String]
+        TODO
+    + packageType [String]
+        Valid values: "BOX"
+    + totalPackages [Integer]
+        TODO
+    + pieceType [String]
+        Valid values: "PLT"
+    + totalPieces [Integer]
+        TODO
     
              {
                 "id": "",
