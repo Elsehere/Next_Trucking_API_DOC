@@ -186,7 +186,7 @@ TODO
 
         {
             "errorCode": 90002,
-            "errorMessage": "Illegal argument for id, the id is not belonging to you."
+            "errorMessage": "Illegal argument for id, the id does not belong to you."
         }
 
 
@@ -233,7 +233,7 @@ TODO
 
         {
             "errorCode": 90002,
-            "errorMessage": "Illegal argument for id, the id is not belonging to you."
+            "errorMessage": "Illegal argument for id, the id does not belong to you."
         }
 
 + Response 422 (application/json) [90003]
