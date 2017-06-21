@@ -11,11 +11,12 @@ Please noted that the prefix for all API is /whiteglove
 TODO
 
 + Request 
-    + Parameters
 
-        + hour
-            Hour means the period for latest orders.
-            Now this API only supports 24/48/96 for hour.
+    + Parameters
+    
+      + hour  
+        Hour means the period for latest orders.  
+        Now this API only supports 24/48/96 for hour.
 
     + Headers
 
@@ -23,15 +24,15 @@ TODO
             SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYY
         
 + Response 200 (application/json)
-    + id [String]
+    + id [String]  
         The unique ID of Next Trucking order.
 
-    + canceled [Boolean]
-        True: Normal order
+    + canceled [Boolean]  
+        True: Normal order  
         False: Canceled order
 
-    + lastModifiedDate [Long] [UTC]
-        In Next Trucking we always updated lastModifiedDate once the order information was changed.
+    + lastModifiedDate [Long] [UTC]  
+        In Next Trucking we always updated lastModifiedDate once the order information was changed.  
         Please always check this field, and call /orders/id API to get the updated order detail information.
 
             [
@@ -75,7 +76,7 @@ TODO
 
     + Parameters
 
-        + id
+        + id  
             The unique ID of Next Trucking order, such as T0000001.
 
     + Headers
@@ -121,10 +122,11 @@ TODO
             SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYY
 
     + Body
-        + id [String]
+    
+        + id [String]  
             The unique ID of Next Trucking order.
 
-        + status [String]
+        + status [String]  
             The status we accept are listed below:
             - pending
             - enroute
