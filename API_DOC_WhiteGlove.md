@@ -107,8 +107,8 @@ TODO
     + pickupAddressCity [String]  
         The city of pickup location address.
     + pickupAddressState [String]  
-        The state of pickup location address, please use abbreviation such as CA for California, AZ for Arizona etc.
-    + pickupAddressCountry [String]  
+        The state of pickup location address, please use abbreviation such as CA for California, AZ for Arizona etc.
+    + pickupAddressCountry [String]  
         The country of pickup location address, such as United State, Canada.
     + pickupAddressZipcode [String]  
         The zipcode of pickup location address.
@@ -151,13 +151,13 @@ TODO
     + shipperNotes [String]  
         The notes of shipper for this order.  
     + nmfcClass [String]  
-        TODO  
+        TODO
     + packageType [String]  
-        Valid values: "BOX"  
-    + totalPackages [Integer]
-        The number of packages for BOX.
+        Valid value: BOX
     + pieceType [String]  
         Valid values: "PLT"
+    + totalPackages [Integer]  
+        The number of packages for BOX.
     + totalPieces [Integer]  
         The number of pieces for PLT.
     + costSummary [Double]  
@@ -192,7 +192,12 @@ TODO
                 "value": "",
                 "weight": "",
                 "commodity": "",
-                "shipperNotes": ""
+                "nmfcClass": "",
+                "packageType": "",
+                "pieceType": "",
+                "totalPackages": "",
+                "totalPieces": "",
+                "costSummary": ""
             }
         
 + Response 401
