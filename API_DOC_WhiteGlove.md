@@ -81,7 +81,7 @@ All the order of whiteglove could be accessed via this interface.
 
 ### Get Detail Information of Order by ID [/orders/id][GET]
 
-TODO
+The detail information of order could be accessed via this interface.
 
 + Request 
 
@@ -218,7 +218,7 @@ TODO
 
 ### Report status of order [/status][PUT]
 
-TODO
+Update the status of order via this interface.
 
 + Request (application/json)
 
@@ -234,9 +234,11 @@ TODO
 
         + status [String]  
             The status we accept are listed below:
-            - pending
-            - enroute
-            - picked_up
+            - Open
+            - Set Off
+            - Scheduled
+            - Delivered
+            - Cancelled
 
                     {
                         "id": "T0000001",
