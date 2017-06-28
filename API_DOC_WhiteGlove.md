@@ -1,6 +1,10 @@
 # Next Trucking API for White Glove
 
-TODO
+Next Trucking will send you ACCESS_KEY_ID and SECRET_KEY once you need to intergate with Next Trucking API.  
+- ACCESS_KEY_ID is a 8 characters random string.
+- SECRET_KEY is a 16 characters random sting.
+
+DO NOT share this pair with others.
 
 Please noted that the prefix for all API is /whiteglove
 
@@ -8,7 +12,14 @@ Please noted that the prefix for all API is /whiteglove
 
 ### List All Order Snapshots for the Last 24 Hours [/latestorders?timeframe=24][GET]
 
-TODO
+All the order of whiteglove could be accessed via this interface.
+- If you got an order with canceled:False, this means a new/updated order, you should process this save or update logic in your code.
+  - If this order already existed in your system, please update this order in your system.
+  - If this order does not exist in your system, please create an new order.
+
+- If you got an order with canceled:True, this means a canceled order.
+  - If this canceled order already existed in your system, please cancel it.
+  - If this canceled order does not exist in your system, please ignore it.
 
 + Request 
 
@@ -21,7 +32,7 @@ TODO
     + Headers
 
             ACCESS_KEY_ID: XXXXXXXX
-            SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYY
+            SECRET_KEY: YYYYYYYYYYYYYYYY
         
 + Response 200 (application/json)
     + id [String]  
@@ -82,78 +93,76 @@ TODO
     + Headers
 
             ACCESS_KEY_ID: XXXXXXXX
-            SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYY
+            SECRET_KEY: YYYYYYYYYYYYYYYY
 
 + Response 200 (application/json)
     + id [String]  
         The unique ID of Next Trucking order.
     + pickupAddressName [String]  
-        TODO
-    + pickupAddress [String]  
-        TODO
+        The name of pickup location address.
     + pickupAddressLine [String]  
-        TODO
+        The first line of pickup location address, such as street and number.
     + pickupAddressLine2 [String]  
-        TODO
+        The second line of pickup location address, such as apartment, suite, unit, building, floor, etc.
     + pickupAddressCity [String]  
-        TODO
+        The city of pickup location address.
     + pickupAddressState [String]  
-        TODO
-    + pickupAddressCountry [String]  
-        TODO
+        The state of pickup location address, please use abbreviation such as CA for California, AZ for Arizona etc.
+    + pickupAddressCountry [String]  
+        The country of pickup location address, such as United State, Canada.
     + pickupAddressZipcode [String]  
-        TODO
+        The zipcode of pickup location address.
     + deliveryAddressName [String]  
-        TODO
-    + deliveryAddress [String]  
-        TODO
+        The name of pickup location address.
     + deliveryAddressLine [String]  
-        TODO
+        The first line of pickup location address, such as street and number.
     + deliveryAddressLine2 [String]  
-        TODO
+        The second line of pickup location address, such as apartment, suite, unit, building, floor, etc.
     + deliveryAddressCity [String]  
-        TODO
+        The city of pickup location address.
     + deliveryAddressState [String]  
-        TODO
+        The state of pickup location address, please use abbreviation such as CA for California, AZ for Arizona etc.
     + deliveryAddressCountry [String]  
-        TODO
+        The country of pickup location address, such as United State, Canada.
     + deliveryAddressZipcode [String]  
-        TODO  
+        The zipcode of pickup location address.  
     + pickupWindowStart [Long][UTC]  
-        TODO  
+        The start time of pickup window.  
     + pickupWindowEnd [Long][UTC]  
-        TODO  
+        The end time of pickup window.  
     + deliveryWindowStart [Long][UTC]  
-        TODO  
+        The start time of delivery window.  
     + deliveryWindowEnd [Long][UTC]  
-        TODO  
+        The end time of delivery window.  
     + referenceNumbers [Array][String]  
-        TODO  
+        The reference number of order, the maximum of length is 3.  
     + purchaseOrderNumber [String]  
-        TODO  
+        The purchase order number of order.  
     + sealNumber [String]  
-        TODO  
+        The seal number of order.  
     + trailerType [String]  
-        TODO  
+        The trailer type of order, the value of this field should be one of DryVan/Reefer/Flatbed.
     + value [Double]  
-        TODO  
+        The value of this order, and the unit is US dollar.  
     + weight [Integer]  
-        TODO  
+        The weight of this order, and the unit is lb.  
     + commodity [String]  
-        TODO  
+        The commodity of this order.
     + shipperNotes [String]  
+        The notes of shipper for this order.  
+    + nmfcClass [String]  
         TODO  
-    + nmfcClass [String]
-        TODO
-    + packageType [String]
-        Valid values: "BOX"
+    + packageType [String]  
+        Valid values: "BOX"  
     + totalPackages [Integer]
-        TODO
-    + pieceType [String]
+        The number of packages for BOX.
+    + pieceType [String]  
         Valid values: "PLT"
-    + totalPieces [Integer]
-        TODO
-    
+    + totalPieces [Integer]  
+        The number of pieces for PLT.
+    + costSummary [Double]  
+        The cost summary of this order.
+       
              {
                 "id": "",
                 "pickupAddressName": "",
@@ -211,7 +220,7 @@ TODO
     + Headers
 
             ACCESS_KEY_ID: XXXXXXXX
-            SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYY
+            SECRET_KEY: YYYYYYYYYYYYYYYY
 
     + Body
     
