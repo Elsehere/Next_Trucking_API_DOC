@@ -13,13 +13,13 @@ Please noted that the prefix for all API is /whiteglove
 ### List All Order Snapshots for the Last 24 Hours [/latestorders?timeframe=24][GET]
 
 All the order of whiteglove could be accessed via this interface.
-- If you got an order with canceled:False, this means a new/updated order, you should process this save or update logic in your code.
+- If you got an order with cancelled:False, this means a new/updated order, you should process this save or update logic in your code.
   - If this order already existed in your system, please update this order in your system.
   - If this order does not exist in your system, please create an new order.
 
-- If you got an order with canceled:True, this means a canceled order.
-  - If this canceled order already existed in your system, please cancel it.
-  - If this canceled order does not exist in your system, please ignore it.
+- If you got an order with cancelled:True, this means a cancelled order.
+  - If this cancelled order already existed in your system, please cancel it.
+  - If this cancelled order does not exist in your system, please ignore it.
 
 + Request 
 
@@ -38,9 +38,9 @@ All the order of whiteglove could be accessed via this interface.
     + id [String]  
         The unique ID of Next Trucking order.
 
-    + canceled [Boolean]  
+    + cancelled [Boolean]  
         True: Normal order  
-        False: Canceled order
+        False: Cancelled order
 
     + lastModifiedDate [Long] [UTC]  
         In Next Trucking we always updated lastModifiedDate once the order information was changed.  
@@ -49,17 +49,17 @@ All the order of whiteglove could be accessed via this interface.
             [
                  {
                      "id": "T0000001",
-                     "canceled": true,
+                     "cancelled": true,
                      "lastModifiedDate": 1498050097
                  },
                  {
                      "id": "T0000002",
-                     "canceled": false,
+                     "cancelled": false,
                      "lastModifiedDate": 1498050097
                  },
                  {
                      "id": "T0000003",
-                     "canceled": false,
+                     "cancelled": false,
                      "lastModifiedDate": 1498050097
                  }
              ]
