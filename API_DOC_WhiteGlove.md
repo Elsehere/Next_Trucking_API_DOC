@@ -37,32 +37,32 @@ All the order of whiteglove could be accessed via this interface.
 + Response 200 (application/json)
     + id [String]  
         The unique ID of Next Trucking order.
-
-    + cancelled [Boolean]  
+        
+    + cancelled [Boolean]  
         True: Normal order  
-        False: Cancelled order
-
+        False: Cancelled order  
+        
     + lastModifiedDate [Long] [UTC]  
         In Next Trucking we always updated lastModifiedDate once the order information was changed.  
         Please always check this field, and call /orders/id API to get the updated order detail information.
 
             [
-                 {
-                     "id": "T0000001",
-                     "cancelled": true,
-                     "lastModifiedDate": 1498050097
-                 },
-                 {
-                     "id": "T0000002",
-                     "cancelled": false,
-                     "lastModifiedDate": 1498050097
-                 },
-                 {
-                     "id": "T0000003",
-                     "cancelled": false,
-                     "lastModifiedDate": 1498050097
-                 }
-             ]
+                {
+                    "id": "T0000001",
+                    "cancelled": true,
+                    "lastModifiedDate": 1498050097
+                }, 
+                {
+                    "id": "T0000002",
+                    "cancelled": false,
+                    "lastModifiedDate": 1498050097
+                }, 
+                {
+                    "id": "T0000003",
+                    "cancelled": false,
+                    "lastModifiedDate": 1498050097
+                }
+            ]
         
 + Response 401
 
