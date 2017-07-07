@@ -6,7 +6,7 @@ Next Trucking will send you ACCESS_KEY_ID and SECRET_KEY once you need to interg
 
 DO NOT share this pair with others.
 
-Please noted that the prefix for all API is /whiteglove
+Please noted that the prefix for all API is /api/whiteglove
 
 ## Lastest Orders [/latestorders]
 
