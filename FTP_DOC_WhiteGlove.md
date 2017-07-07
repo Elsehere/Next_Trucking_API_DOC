@@ -5,7 +5,7 @@ DO NOT share your account and password with others.
 
 The path /whiteglove is your home path of Next Trucking FTP Server.  
 There are two folders under home path, Inbound and Outbound.  
-Update all your files to Inbound, so the path is /whiteglove/Inbound.  
+Upload all your files to Inbound, so the path is /whiteglove/Inbound.  
 Ignore Outbound folder for now.
 
 Two types of files should be upload to /whiteglove/Inbound.
