@@ -32,5 +32,7 @@ Example:
   - T0000001_IMAGE_20170701235959.jpg
   - T0001000_IMAGE_20170703235959.png
   
+if the file name does not meet the above roles, we will output a file named [Order_ID]_[File_Type]_[Created_UTC_Date].[File_Extension]_10000.log in  /whiteglove/outbound directory.
+  
 Once Next Trucking consumed file on FTP Server, the file will be deleted by Next Trucking.  
 For one load, 5 is the maximum for each type of file.
