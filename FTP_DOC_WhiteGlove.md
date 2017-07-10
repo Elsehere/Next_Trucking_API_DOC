@@ -39,3 +39,5 @@ if the file name does not meet the above roles, we will output a file named [Ord
   
 Once Next Trucking consumed file on FTP Server, the file will be deleted by Next Trucking.  
 For one load, 5 is the maximum for each type of file.
+
+test
